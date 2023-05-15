@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Meal App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Meal App</h1>
+  </header>
+  <main>
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Search for a meal">
+    </div>
+    <div id="searchResults" class="results-container">
+      <div class="meal-card" onclick="showMealDescription('Pizza')">
+        <img src="https://images.pexels.com/photos/803290/pexels-photo-803290.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Pizza">
+        <h3>Pizza</h3>
+      </div>
+      <div class="meal-card" onclick="showMealDescription('Burger')">
+        <img src="https://images.pexels.com/photos/1633578/pexels-photo-1633578.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Burger">
+        <h3>Burger</h3>
+      </div>
+      <div class="meal-card" onclick="showMealDescription('Pasta')">
+        <img src="https://www.themealdb.com/images/media/meals/ustsqw1468250014.jpg" alt="Pasta">
+        <h3>Pasta</h3>
+      </div>
+      <!-- Add more preloaded meal cards here -->
+    </div>
+  </main>
+  <script src="scripts.js"></script>
+</body>
+</html>
